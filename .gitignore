@@ -1,3 +1,4 @@
 .vscode
 __pycache__
 scratch.py
+.pytest_cache

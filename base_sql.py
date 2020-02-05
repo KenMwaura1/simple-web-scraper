@@ -9,13 +9,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-engine = create_engine(
-    "postgres+psycopg2://test:testpassword@localhost:5432/scrapedb", pool_pre_ping=True
+
+db = os.getenv(
+    "DATABASE_URL", "postgresql+psycopg2://test:testpassword@localhost:5432/scrapedb"
 )
-db = os.getenv("DATABASE_URL")
+engine = create_engine(db)
 engine.connect()
 print(engine)
 Session = sessionmaker(bind=engine)
 
 Base = declarative_base()
-
