@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/zoo/.pyenv/versions/jumia-scraper/bin/python3.7"
+    "python.pythonPath": "/home/zoo/.pyenv/versions/jumia-scraper/bin/python3.7",
+    "python.formatting.provider": "black"
 }
