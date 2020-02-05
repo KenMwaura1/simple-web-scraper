@@ -7,6 +7,17 @@ Created on Sun Sep 23 20:20:31 2019
 
 import requests
 from bs4 import BeautifulSoup
+from datetime import date
+
+from base_sql import Session, engine, Base
+from player_sql import Player
+
+# 1 generate database schema
+Base.metadata.create_all(engine)
+
+
+# 2 Create a new session
+session = Session()
 
 # get the data
 data = requests.get("https://www.umggaming.com/leaderboards")
@@ -25,3 +36,12 @@ for tr in tbody.find_all("tr"):
     print("Place", "Username", "XP", sep="\t")
     print(place, username, xp, sep="\t")
     # leaderboard-table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5)
+
+    # create players
+    player = Player(username=username, place=place, xp=xp)
+    #  Persist data
+    session.add(player)
+
+    session.commit()
+
+session.close()

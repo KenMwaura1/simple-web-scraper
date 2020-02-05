@@ -15,7 +15,7 @@ class Player(Base):
 
     id = Column(Integer, primary_key=True)
     username = Column(String(80))
-    place = Column(Integer())
+    place = Column(String())
     xp = Column(Integer())
 
     def __init__(self, username, place, xp):
