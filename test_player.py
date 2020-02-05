@@ -1,11 +1,11 @@
 import pytest
 
 from player_sql import Player
-from player_factory_sqlalchemy import PlayerFactory
-from player_factory_basic import PlayerModel
+from player_factory_sqlalchemy import PlayerModel
+from player_factory_basic import PlayerFactory
 from base_sql import Session
 
-session = Session()
+# session = Session()
 
 
 @pytest.fixture(scope="function")
