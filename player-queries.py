@@ -16,4 +16,4 @@ session = Session()
 # 3 extract all players
 players = session.query(Player).all()
 for player in players:
-    print(player.place, player.username, player.xp)
+    print(player.id,player.place, player.username, player.xp)

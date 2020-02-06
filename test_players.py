@@ -25,13 +25,8 @@ def my_func_to_delete_Player(session, Player_id):
 
 def test_case(session, monkeypatch):
     test_request_payload = {"username": "something", "place": "2nd", "xp": 23654}
-    # player = Player(username="zoo", place="2nd", xp=23654)
-    # monkeypatch.setattr(player)
-    # Player = session.add(player)
-    # assert session.query(Player).one()
-    player1 = session.add(player_func())
-    # assert session.query(player1).one()
+    session.add(Player(username="zoo", place="2nd", xp=23654))
+    assert session.query(Player)
     my_func_to_delete_Player(session, Player.id)
-
     result = session.query(Player).one_or_none()
     assert result is None
