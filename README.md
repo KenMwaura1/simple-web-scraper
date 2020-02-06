@@ -44,6 +44,6 @@ Optionally can also set the db credentials as environment variables
 
 ## Usage
 
-1. Run the scraper
+1.Run the scraper
 
 `python scrape.py`
