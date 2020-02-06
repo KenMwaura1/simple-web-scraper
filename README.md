@@ -13,19 +13,19 @@ SQLAlchemy is used as a ORM to insert data into the db
 
 `git clone (https://github.com/KenMwaura1/simple-web-scraper)`
 
-2. Cd into the simple-web-scraper folder
+2.Cd into the simple-web-scraper folder
 
 `cd simple-web-scraper`
 
-3. Create a virtualenv
+3.Create a virtualenv
 
 `python3 -m virtualenv env`
 
-4. Activate virtualenv
+4.Activate virtualenv
 
 `source /bin/activate` OR use pipenv `pipenv install`
 
-5. Install the required dependecies
+5.Install the required dependecies
 
 `python -m pip install -r requirements.txt`
 
