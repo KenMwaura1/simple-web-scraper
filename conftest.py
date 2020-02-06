@@ -3,7 +3,12 @@ import os
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
-engine = create_engine(os.getenv("DATABASE_URL"))
+engine = create_engine(
+    os.getenv(
+        "DATABASE_URL",
+        "postgresql+psycopg2://test:testpassword@localhost:5432/scrapedb",
+    )
+)
 Session = sessionmaker()
 
 
