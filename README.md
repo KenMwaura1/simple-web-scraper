@@ -2,7 +2,7 @@
 
 ![Python package](https://github.com/KenMwaura1/simple-web-scraper/workflows/Python%20package/badge.svg)
 
-This repository contains code for a webscraoer for [Lifetime Leaderboards \| UMG Gaming](https://www.umggaming.com/leaderboards)
+This repository contains code for a webscraper for [Lifetime Leaderboards \| UMG Gaming](https://www.umggaming.com/leaderboards)
 Making use of the beatifulsoup4 and requests
 Postgres as a Database
 SQLAlchemy is used as a ORM to insert data into the db
