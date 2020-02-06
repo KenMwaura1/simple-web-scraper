@@ -22,4 +22,3 @@ class PlayerFactory(factory.alchemy.SQLAlchemyModelFactory):
 
     class Meta:
         model = PlayerModel
-

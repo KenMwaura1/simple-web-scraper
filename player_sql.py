@@ -22,4 +22,3 @@ class Player(Base):
         self.place = place
         self.username = username
         self.xp = xp
-
