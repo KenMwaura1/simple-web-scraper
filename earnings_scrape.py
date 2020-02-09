@@ -36,13 +36,21 @@ for tr in tbody.find_all("tr"):
     print(place, username, earnings, sep="\t")
     # leaderboard-table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5)
     # create players
-    player = Earning_Player(username=username, place=place, earnings=earnings)
-    # Check if player exists
+    player = Earning_Player(username=username, place=place, earnings=float(earnings))
     players = session.query(Earning_Player).all()
-    if session.query(Earning_Player).filter(Earning_Player.username == username):
+    try:
+        if session.query(Earning_Player).filter(Earning_Player.id > 0).all():
+            # Check if player exists
+            players = session.query(Earning_Player).all()
+            if session.query(Earning_Player).filter(
+                Earning_Player.username == username
+            ):
+                pass
+    except True as identifier:
         pass
     else:
-        session.add(Earning_Player)
+        session.add(player)
+
     session.commit()
 
 session.close()
