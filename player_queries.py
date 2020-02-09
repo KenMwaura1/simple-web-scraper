@@ -10,15 +10,17 @@ from sqlalchemy import func
 from sqlalchemy import *
 from datetime import date
 from player_sql import Player
+from top_earning_players_sql import Earning_Player
 from base_sql import Session
 
 # 2 Extract a session
 session = Session()
 
 # 3 extract all players
-players = session.query(Player).all()
+players = session.query(Earning_Player).all()
+print(players)
 for player in players:
-    print(player.id, player.place, player.username, player.xp)
+    print(player.id, player.place, player.username, player.earnings)
     # 4 Delete duplicate values in the database
     test = session.query(Player).filter(Player.username).distinct()
     # print(test)
