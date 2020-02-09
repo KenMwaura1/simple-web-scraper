@@ -39,9 +39,12 @@ for tr in tbody.find_all("tr"):
 
     # create players
     player = Player(username=username, place=place, xp=xp)
-    #  Persist data
-    session.add(player)
-
+    # Check if player exists
+    players = session.query(Player).all()
+    if session.query(Player).filter(Player.username == username):
+        pass
+    else:
+        session.add(player)
     session.commit()
 
 session.close()
