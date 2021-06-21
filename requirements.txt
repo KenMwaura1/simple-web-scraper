@@ -76,7 +76,7 @@ testfixtures==6.10.1
 text-unidecode==1.3
 toml==0.10.0
 typed-ast==1.4.0
-urllib3==1.25.6
+urllib3==1.25.9
 waitress==1.4.3
 wcwidth==0.1.7
 WebOb==1.8.5
