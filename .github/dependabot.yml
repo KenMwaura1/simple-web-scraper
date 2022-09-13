@@ -1,0 +1,24 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: pytest
+    versions:
+    - 6.2.2
+  - dependency-name: flask-migrate
+    versions:
+    - 2.6.0
+  - dependency-name: typed-ast
+    versions:
+    - 1.4.2
+  - dependency-name: more-itertools
+    versions:
+    - 8.6.0
+  - dependency-name: zipp
+    versions:
+    - 3.4.0
