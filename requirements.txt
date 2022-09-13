@@ -10,8 +10,8 @@ blinker==1.4
 certifi==2021.5.30
 cffi==1.13.2
 chardet==3.0.4
-Click==7.0
-cookiecutter==2.1.1
+Click==8.0.1
+cookiecutter==1.6.0
 entrypoints==0.3
 environs==6.1.0
 factory-boy==2.12.0
