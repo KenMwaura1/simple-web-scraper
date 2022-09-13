@@ -81,7 +81,7 @@ waitress==2.1.2
 wcwidth==0.1.7
 WebOb==1.8.5
 WebTest==2.0.33
-Werkzeug==2.0.1
+Werkzeug==2.2.2
 whichcraft==0.6.1
 wmctrl==0.3
 WTForms==3.0.1
