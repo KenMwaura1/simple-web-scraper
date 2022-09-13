@@ -84,5 +84,5 @@ WebTest==2.0.33
 Werkzeug==2.0.1
 whichcraft==0.6.1
 wmctrl==0.3
-WTForms==2.2.1
+WTForms==3.0.1
 zipp==3.8.1
