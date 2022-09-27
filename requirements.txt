@@ -78,7 +78,7 @@ toml==0.10.0
 typed-ast==1.4.3
 urllib3==1.26.12
 waitress==2.1.2
-wcwidth==0.1.7
+wcwidth==0.2.5
 WebOb==1.8.5
 WebTest==2.0.33
 Werkzeug==2.2.2
