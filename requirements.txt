@@ -83,6 +83,6 @@ WebOb==1.8.7
 WebTest==2.0.33
 Werkzeug==2.2.2
 whichcraft==0.6.1
-wmctrl==0.3
+wmctrl==0.4
 WTForms==3.0.1
 zipp==3.8.1
