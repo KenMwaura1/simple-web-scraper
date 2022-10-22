@@ -11,7 +11,7 @@ SQLAlchemy is used as a ORM to insert data into the db
 
 1.Clone this Repo
 
-`git clone (https://github.com/KenMwaura1/simple-web-scraper)`
+`git clone https://github.com/KenMwaura1/simple-web-scraper`
 
 2.Cd into the simple-web-scraper folder
 
