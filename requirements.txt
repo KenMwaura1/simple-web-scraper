@@ -16,7 +16,7 @@ entrypoints==0.4
 environs==6.1.0
 factory-boy==2.12.0
 Faker==14.2.0
-fancycompleter==0.8
+fancycompleter==0.9.1
 flake8==3.7.9
 flake8-blind-except==0.1.1
 flake8-debugger==3.2.1
