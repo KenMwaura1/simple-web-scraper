@@ -3,3 +3,4 @@ __pycache__
 scratch.py
 .pytest_cache
 test_player.py
+venv/
