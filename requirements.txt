@@ -37,7 +37,7 @@ future==0.18.2
 # greenlet==0.4.15
 gunicorn==20.1.0
 idna==3.4
-importlib-metadata==4.12.0
+importlib-metadata==5.0.0
 isort==4.3.21
 itsdangerous==2.1.2
 Jinja2==2.11.3
