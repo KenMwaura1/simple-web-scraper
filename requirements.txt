@@ -7,7 +7,7 @@ attrs==19.3.0
 bcrypt==4.0.1
 beautifulsoup4==4.11.1
 binaryornot==0.4.4
-blinker==1.4
+blinker==1.5
 certifi==2021.5.30
 cffi==1.13.2
 chardet==5.0.0
