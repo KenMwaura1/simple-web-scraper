@@ -87,4 +87,4 @@ wheel
 whichcraft==0.6.1
 wmctrl==0.4
 WTForms==3.0.1
-zipp==3.8.1
+zipp==3.10.0
