@@ -47,7 +47,7 @@ Mako==1.2.3
 MarkupSafe
 marshmallow==3.2.2
 mccabe==0.6.0
-more-itertools==8.14.0
+more-itertools==9.0.0
 packaging==19.2
 pathspec==0.10.1
 pdbpp==0.10.3
