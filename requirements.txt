@@ -45,7 +45,7 @@ Jinja2==3.0
 jinja2-time==0.2.0
 Mako==1.2.3
 MarkupSafe
-marshmallow==3.2.2
+marshmallow==3.19.0
 mccabe==0.6.0
 more-itertools==8.14.0
 packaging==19.2
