@@ -16,7 +16,7 @@ cookiecutter==2.1.1
 entrypoints==0.3.0
 environs==9.5.0
 factory-boy==3.2.1
-Faker==14.2.0
+Faker==15.3.3
 fancycompleter==0.9.1
 flake8==3.7.9
 flake8-blind-except==0.2.1
