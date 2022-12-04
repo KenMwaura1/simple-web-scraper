@@ -41,12 +41,20 @@ The default db credentials are:
   * host: localhost 
   * port: 5432 
   * user: test 
-  * db: scrapedb 
-  * password: testpaassword
+  * db: xp_db
+  * password: testpassword
 
 Optionally can also set the db credentials as environment variables
 
-`export DATABASE_URL='postgres://test:testpassword@localhost:5432/scrapedb'`
+`export DATABASE_URL='postgres://test:testpassword@localhost:5432/xp_db'`
+
+
+or copy the included .env example file
+```shell
+cp .env.example .env
+```
+Add your credentials to the .env file.
+
 
 ## Usage
 
