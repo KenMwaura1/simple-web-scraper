@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8, 3.9]
+        python-version: [3.8, 3.9, 3.10.8 ,3.11.0]
 
     steps:
     - uses: actions/checkout@v2
@@ -22,7 +22,7 @@ jobs:
         # Version of PostgreSQL to use
         postgresql version: 12
         # POSTGRES_DB - name for the default database that is created
-        postgresql db: scrapedb
+        postgresql db: xp_db
         # POSTGRES_USER - create the specified user with superuser power
         postgresql user: test
         # POSTGRES_PASSWORD - superuser password
