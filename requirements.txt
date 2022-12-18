@@ -59,7 +59,7 @@ psycopg2-binary==2.8.4
 py==1.11.0
 pycodestyle==2.5.0
 pycparser==2.21
-pydocstyle==4.0.1
+pydocstyle==6.1.1
 pyflakes==2.1.0
 Pygments==2.13.0
 pyparsing==2.4.4
