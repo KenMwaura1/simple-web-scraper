@@ -6,7 +6,7 @@ attrs==22.1.0
 bcrypt==4.0.0
 beautifulsoup4==4.9.3
 binaryornot==0.4.4
-blinker==1.4
+blinker==1.5
 cachelib==0.9.0
 certifi==2022.12.7
 cffi==1.15.1
