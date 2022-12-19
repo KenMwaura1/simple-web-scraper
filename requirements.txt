@@ -14,7 +14,7 @@ chardet==5.1.0
 charset-normalizer==2.1.1
 click==8.0.1
 cookiecutter==2.1.1
-entrypoints==0.3
+entrypoints==0.4
 environs==6.1.0
 exceptiongroup==1.0.4
 factory-boy==2.12.0
