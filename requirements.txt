@@ -47,7 +47,7 @@ jinja2-time==0.2.0
 Mako==1.2.4
 MarkupSafe==2.1.1
 marshmallow==3.2.2
-mccabe==0.6.0
+mccabe==0.7.0
 more-itertools==8.14.0
 packaging==22.0
 pathspec==0.6.0
