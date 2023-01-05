@@ -33,16 +33,22 @@ for tr in tbody.find_all("tr"):
     username = tr.find_all("td")[1].find_all("a")[1].text.strip()
     xp = tr.find_all("td")[4].text.strip()
     # print('position','username','xp', sep='\t')
-    print("Place", "Username", "XP", sep="\t")
-    print(place, username, xp, sep="\t")
+    print("Place", "Username", "XP", sep="  ")
+    print(place, username, xp, sep="  ")
     # leaderboard-table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5)
 
     # create players
     player = Player(username=username, place=place, xp=xp)
     # Check if player exists
     players = session.query(Player).all()
-    if session.query(Player).filter(Player.username == username):
-        pass
+    try: 
+        pl = session.query(Player).filter(Player.username == username).first()
+        if pl:
+            session.delete(pl)
+            session.commit()
+    except Exception as e:
+        session.rollback()
+        print(e)
     else:
         session.add(player)
     session.commit()
