@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 28 01:01:49 2020
-
 @author: Ken Mwaura
 """
 from datetime import date

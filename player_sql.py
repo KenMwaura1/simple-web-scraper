@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jan 28 00:29:26 2020
 
 @author: Ken Mwaura
 """
