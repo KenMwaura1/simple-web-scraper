@@ -30,25 +30,26 @@ for tr in tbody.find_all("tr"):
     username = tr.find_all("td")[1].find_all("a")[1].text.strip()
     earnings = tr.find_all("td")[4].text.strip()[1:]
     # print('position','username','earnings', sep='\t')
-    print("Place", "Username", "Earnings", sep="\t")
-    print(place, username, earnings, sep="\t")
-    # leaderboard-table > tbody:nth-child(2) > tr:nth-child(1) > td:nth-child(5)
+    print("Place", "Username", "Earnings", sep="  ")
+    print(place, username, earnings, sep="   ")
     # create players
     player = Earning_Player(username=username, place=place, earnings=float(earnings))
     players = session.query(Earning_Player).all()
     try:
         if session.query(Earning_Player).filter(Earning_Player.id > 0).all():
             # Check if player exists
-            players = session.query(Earning_Player).all()
-            if session.query(Earning_Player).filter(
-                Earning_Player.username == username
-            ):
-                pass
-    except True as identifier:
-        pass
+            pl = session.query(Earning_Player).filter(Earning_Player.username == username).first()
+            if pl:
+                # print(pl.username, pl.place, pl.earnings)
+                session.delete(pl)
+                session.commit()
+                
+    except Exception as e:
+        session.rollback()
+        print(e)
     else:
         session.add(player)
 
-    session.commit()
+        session.commit()
 
 session.close()

@@ -1,5 +1,4 @@
 """
-Created on Mon Feb 9 00:29:26 2020
 
 @author: Ken Mwaura
 """
