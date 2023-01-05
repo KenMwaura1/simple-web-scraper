@@ -2,7 +2,22 @@ import pytest
 
 from player_sql import Player
 from top_earning_players_sql import Earning_Player
-from base_sql import Session
+from base_sql import Session, engine, Base
+
+@pytest.fixture(scope="module")
+def connection():
+    connection = engine.connect()
+    yield connection
+    connection.close()
+
+#
+@pytest.fixture(scope="function")
+def session(connection):
+    transaction = connection.begin()
+    session = Session(bind=connection)
+    yield session
+    session.close()
+    transaction.rollback()
 
 
 @pytest.fixture(scope="function")
@@ -49,6 +64,13 @@ def test_player(session, player_func):
 def test_case2(session, monkeypatch):
     test_request_payload = {"username" : "something", "place" : "2nd", "earnings" : 23654}
     session.add(Earning_Player(username="zoo 2", place="2nd", earnings=23654))
+    assert session.query(Earning_Player)
+    my_func_to_delete_Player2(session, Earning_Player.id)
+    result = session.query(Earning_Player).one_or_none()
+    assert result is None
+
+def test_player2(session, player_func2):
+    session.add(player_func2)
     assert session.query(Earning_Player)
     my_func_to_delete_Player2(session, Earning_Player.id)
     result = session.query(Earning_Player).one_or_none()
