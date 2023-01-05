@@ -47,7 +47,7 @@ jobs:
         python earnings_scrape.py
         python player_queries.py
     
-#     - name: Test with pytest
-#       run: |
-#         pip install pytest
-#         pytest .
+    - name: Test with pytest
+      run: |
+        pip install pytest
+        pytest .
