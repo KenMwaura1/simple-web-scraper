@@ -4,10 +4,9 @@
 
 import requests
 from bs4 import BeautifulSoup
-from datetime import date
 
-from base_sql import Session, engine, Base
-from top_earning_players_sql import Earning_Player
+from db.base_sql import Session, engine, Base
+from db.top_earning_players_sql import Earning_Player
 
 # 1 generate database schema
 Base.metadata.create_all(engine)
