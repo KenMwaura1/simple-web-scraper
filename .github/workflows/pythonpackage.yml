@@ -47,7 +47,7 @@ jobs:
         python postgres_inserts.py
         cd ..
         python xp_scrape.py
-        python earnings_scrape.py
+        # python earnings_scrape.py
         cd db
         python player_queries.py
     
