@@ -6,7 +6,7 @@
 from sqlalchemy import Column, String, Integer, Date
 from datetime import date as dt
 
-from .base_sql import Base
+from db.base_sql import Base
 
 
 class Player(Base):
