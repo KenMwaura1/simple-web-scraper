@@ -47,7 +47,6 @@ jobs:
         python base_sql.py
     - name: app-test
       run: |
-        cd ..
         python xp_scrape.py
         python earnings_scrape.py
         cd db
