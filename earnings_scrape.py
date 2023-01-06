@@ -5,7 +5,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from db.base_sql import Session, engine, Base
+from base_sql import Session, engine, Base
 from db.top_earning_players_sql import Earning_Player
 
 # 1 generate database schema

@@ -6,7 +6,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-from db.base_sql import Session, engine, Base
+from base_sql import Session, engine, Base
 from db.player_sql import Player
 
 # 1 generate database schema
