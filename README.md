@@ -27,7 +27,7 @@ SQLAlchemy is used as a ORM to insert data into the db
 
 5.Install the required dependecies
 
-`python -m pip install -r requirements.txt`
+`python3 -m pip install -r requirements.txt`
 
 ## Database
 
@@ -50,14 +50,26 @@ Optionally can also set the db credentials as environment variables
 
 
 or copy the included .env example file
-```shell
+`````shell
 cp .env.example .env
-```
+`````
 Add your credentials to the .env file.
 
 
 ## Usage
 
 1.Run the scraper
+    1a. To run the scraper and insert xp data into the db
+    ```shell
+    python xp_scrape.py
+    ```
+    1b. To run the scraper and insert earnings data into the db 
+    ```shell
+    python earnings_scrape.py
+    ```
 
-`python scrape.py`
+## Tests 
+To run the tests run the following command at the root of the project.
+```shell
+pytest . 
+```
