@@ -40,11 +40,12 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: app-test
       run: |
+        python xp_scrape.py
+        python earnings_scrape.py
+        cd db
         python base_sql.py
         python player_sql.py
         python top_earning_players_sql.py
-        python xp_scrape.py
-        python earnings_scrape.py
         python player_queries.py
     
     - name: Test with pytest
