@@ -1,6 +1,6 @@
 import factory
 
-from base_sql import Session
+from .base_sql import Session
 
 session = Session()
 
