@@ -38,38 +38,47 @@ OR
 run a Postgres container on Docker [Easy PostgreSQL 10 and pgAdmin 4 Setup with Docker](https://info.crunchydata.com/blog/easy-postgresql-10-and-pgadmin-4-setup-with-docker) container on port 5432
 
 The default db credentials are:
-  * host: localhost 
-  * port: 5432 
-  * user: test 
-  * db: xp_db
-  * password: testpassword
+
+* host: localhost
+* port: 5432
+* user: test
+* db: xp_db
+* password: testpassword
 
 Optionally can also set the db credentials as environment variables
 
-`export DATABASE_URL='postgres://test:testpassword@localhost:5432/xp_db'`
-
+```shell
+export DATABASE_URL='postgres://test:testpassword@localhost:5432/xp_db'
+```
 
 or copy the included .env example file
-`````shell
-cp .env.example .env
-`````
-Add your credentials to the .env file.
 
+```shell
+cp .env.example .env
+```
+
+Add your credentials to the .env file.
 
 ## Usage
 
 1.Run the scraper
-    1a. To run the scraper and insert xp data into the db
-    ```shell
-    python xp_scrape.py
-    ```
-    1b. To run the scraper and insert earnings data into the db 
-    ```shell
-    python earnings_scrape.py
-    ```
 
-## Tests 
+  1a. To run the scraper and insert xp data into the db
+
+  ```shell
+  python xp_scrape.py
+  ```
+
+  1b. To run the scraper and insert earnings data into the db
+
+  ```shell
+  python earnings_scrape.py
+```
+
+## Tests
+
 To run the tests run the following command at the root of the project.
+
 ```shell
 pytest . 
 ```
