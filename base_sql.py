@@ -1,6 +1,4 @@
 """
-Created on Mon Jan 28 00:18:04 2020
-
 @author: Ken Mwaura
 """
 import os
