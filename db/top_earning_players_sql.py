@@ -5,7 +5,7 @@
 from sqlalchemy import Column, String, Date, Integer, Float
 from datetime import date as dt
 
-from .base_sql import Base
+from base_sql import Base
 
 
 class Earning_Player(Base):
