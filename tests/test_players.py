@@ -82,25 +82,25 @@ def test_case(session, monkeypatch):
     test_request_payload = {"username": "something", "place": "2nd", "xp": 23654}
     session.add(Player(username="zoo", place="2nd", xp=23654))
     assert session.query(Player)
+    monkeypatch.setattr("db.player_sql.Player", test_request_payload)
     my_func_to_delete_Player(session, Player.id)
     result = session.query(Player).one_or_none()
     assert result is None
 
+def test_case2(session, monkeypatch):
+    test_request_payload = {"username": "something", "place": "2nd", "earnings": 23654}
+    session.add(Earning_Player(username="zoo 2", place="2nd", earnings=23654))
+    assert session.query(Earning_Player)
+    monkeypatch.setattr("db.top_earning_players_sql.Earning_Player", test_request_payload)
+    my_func_to_delete_Player2(session, Earning_Player.id)
+    result = session.query(Earning_Player).one_or_none()
+    assert result is None
 
 def test_player(session, player_func):
     session.add(player_func)
     assert session.query(Player)
     my_func_to_delete_Player(session, Player.id)
     result = session.query(Player).one_or_none()
-    assert result is None
-
-
-def test_case2(session, monkeypatch):
-    test_request_payload = {"username": "something", "place": "2nd", "earnings": 23654}
-    session.add(Earning_Player(username="zoo 2", place="2nd", earnings=23654))
-    assert session.query(Earning_Player)
-    my_func_to_delete_Player2(session, Earning_Player.id)
-    result = session.query(Earning_Player).one_or_none()
     assert result is None
 
 

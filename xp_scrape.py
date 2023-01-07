@@ -51,3 +51,6 @@ for tr in tbody.find_all("tr"):
     session.commit()
 
 session.close()
+
+if __name__ == "__main__":
+ print("Scraping data")

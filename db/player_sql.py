@@ -23,3 +23,14 @@ class Player(Base):
         self.username = username
         self.xp = xp
         self.date = dt.today()
+    
+    def __repr__(self):
+        return f"{self.username} {self.place} {self.xp} {self.date}"
+
+    def __str__(self):
+        return f"{self.username} {self.place} {self.xp} {self.date}"
+
+
+if __name__ == "__main__":
+    print("Player class")
+    

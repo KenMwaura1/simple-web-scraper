@@ -22,3 +22,14 @@ class Earning_Player(Base):
         self.username = username
         self.earnings = earnings
         self.date = dt.today()
+    
+    def __repr__(self):
+        return f"{self.username} {self.place} {self.earnings} {self.date}"
+    
+    def __str__(self):
+        return f"{self.username} {self.place} {self.earnings} {self.date}"
+    
+
+if __name__ == "__main__":
+    print("Earning_Player class")
+    
