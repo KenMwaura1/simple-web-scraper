@@ -7,25 +7,29 @@ Making use of the beatifulsoup4 and requests
 Postgres as a Database
 SQLAlchemy is used as a ORM to insert data into the db
 
+## Accompanying Blog Post
+
+[Get Started with a Web Scraping Project](https://dev.to/ken_mwaura1/getting-started-with-a-web-scraping-project-10ej)
+
 ## Installation
 
-1.Clone this Repo
+1. Clone this Repo
 
 `git clone https://github.com/KenMwaura1/simple-web-scraper`
 
-2.Cd into the simple-web-scraper folder
+2. Change into into the simple-web-scraper folder
 
 `cd simple-web-scraper`
 
-3.Create a virtualenv
+3. Create a virtualenv
 
 `python3 -m virtualenv env`
 
-4.Activate virtualenv
+4. Activate virtualenv
 
 `source /bin/activate` OR use pipenv `pipenv install`
 
-5.Install the required dependecies
+5. Install the required dependecies
 
 `python3 -m pip install -r requirements.txt`
 
