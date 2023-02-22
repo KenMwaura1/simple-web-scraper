@@ -12,7 +12,6 @@ from db.player_sql import Player
 # 1 generate database schema
 Base.metadata.create_all(engine)
 
-
 # 2 Create a new session
 session = Session()
 
@@ -38,7 +37,7 @@ for tr in tbody.find_all("tr"):
     player = Player(username=username, place=place, xp=xp)
     # Check if player exists
     players = session.query(Player).all()
-    try: 
+    try:
         pl = session.query(Player).filter(Player.username == username).first()
         if pl:
             session.delete(pl)
@@ -53,4 +52,4 @@ for tr in tbody.find_all("tr"):
 session.close()
 
 if __name__ == "__main__":
- print("Scraping data")
+    print("Scraping data")
