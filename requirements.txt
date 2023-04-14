@@ -7,7 +7,7 @@ factory-boy==3.2.1
 Faker==18.4.0
 idna==3.4
 iniconfig==2.0.0
-packaging==23.0
+packaging==23.1
 pluggy==1.0.0
 psycopg2==2.9.6
 psycopg2-binary==2.9.5
