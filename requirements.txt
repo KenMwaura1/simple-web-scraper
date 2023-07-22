@@ -3,7 +3,7 @@ beautifulsoup4==4.12.2
 certifi==2023.5.7
 charset-normalizer==3.2.0
 exceptiongroup==1.1.2
-factory-boy==3.2.1
+factory-boy==3.3.0
 Faker==19.2.0
 idna==3.4
 iniconfig==2.0.0
