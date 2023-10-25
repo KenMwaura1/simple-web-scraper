@@ -11,7 +11,7 @@ packaging==23.2
 pluggy==1.3.0
 psycopg2==2.9.9
 psycopg2-binary==2.9.9
-pytest==7.4.2
+pytest==7.4.3
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 requests==2.31.0
