@@ -14,7 +14,7 @@ psycopg2-binary==2.9.9
 pytest==8.2.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
-requests==2.32.2
+requests==2.32.3
 six==1.16.0
 soupsieve==2.5
 SQLAlchemy==2.0.30
