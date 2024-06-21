@@ -4,7 +4,7 @@ certifi==2024.6.2
 charset-normalizer==3.3.2
 exceptiongroup==1.2.1
 factory-boy==3.3.0
-Faker==25.8.0
+Faker==25.9.1
 idna==3.7
 iniconfig==2.0.0
 packaging==24.1
