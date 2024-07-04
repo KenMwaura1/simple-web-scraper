@@ -1,6 +1,6 @@
 attrs==23.2.0
 beautifulsoup4==4.12.3
-certifi==2024.6.2
+certifi==2024.7.4
 charset-normalizer==3.3.2
 exceptiongroup==1.2.1
 factory-boy==3.3.0
