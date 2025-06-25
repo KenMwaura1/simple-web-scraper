@@ -13,7 +13,7 @@ psycopg2==2.9.10
 psycopg2-binary==2.9.10
 pytest==8.4.1
 python-dateutil==2.9.0.post0
-python-dotenv==1.1.0
+python-dotenv==1.1.1
 requests==2.32.4
 six==1.17.0
 soupsieve==2.7
