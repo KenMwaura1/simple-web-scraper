@@ -10,7 +10,7 @@ iniconfig==2.1.0
 packaging==25.0
 pluggy==1.6.0
 psycopg2==2.9.10
-psycopg2-binary==2.9.10
+psycopg2-binary==2.9.11
 pytest==8.4.2
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.1
