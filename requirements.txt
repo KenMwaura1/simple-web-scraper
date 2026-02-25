@@ -17,6 +17,6 @@ python-dotenv==1.2.1
 requests==2.32.5
 six==1.17.0
 soupsieve==2.8.3
-SQLAlchemy==2.0.46
+SQLAlchemy==2.0.47
 tomli==2.4.0
 urllib3==2.6.3
