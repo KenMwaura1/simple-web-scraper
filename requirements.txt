@@ -9,8 +9,8 @@ idna==3.11
 iniconfig==2.3.0
 packaging==26.1
 pluggy==1.6.0
-psycopg2==2.9.11
-psycopg2-binary==2.9.12
+psycopg2==2.9.12
+psycopg2-binary==2.9.11
 pytest==9.0.3
 python-dateutil==2.9.0.post0
 python-dotenv==1.2.2
