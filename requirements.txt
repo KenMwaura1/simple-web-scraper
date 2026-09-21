@@ -19,4 +19,4 @@ six==1.17.0
 soupsieve==2.9.2
 SQLAlchemy==2.0.52
 tomli==2.4.1
-urllib3==2.7.0
+urllib3==2.8.0
