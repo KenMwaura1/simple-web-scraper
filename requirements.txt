@@ -12,7 +12,7 @@ pluggy==1.7.0
 psycopg2==2.9.13
 psycopg2-binary==2.9.13
 pytest==9.2.0
-python-dateutil==2.9.0.post0
+python-dateutil==4.0.0
 python-dotenv==1.2.4
 requests==2.34.2
 six==1.17.0
